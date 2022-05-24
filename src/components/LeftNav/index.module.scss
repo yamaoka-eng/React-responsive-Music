@@ -1,0 +1,30 @@
+.main {
+  white-space: nowrap;
+  .navContainer {
+    @apply font-sans text-gray-800 select-none;
+    >span {
+      @apply text-xs text-gray-500 pt-5 pb-2 px-2
+    }
+    p {
+      @apply flex items-center my-1 text-xs py-1 font-semibold rounded-lg hover:bg-gray-200 transition-all cursor-pointer;
+      .icon {
+        @apply mx-2 text-sm
+      }
+    }
+    .show {
+      @apply bg-indigo-500 text-white hover:bg-indigo-500
+    }
+    div {
+      @apply flex justify-between items-center my-6 text-sm px-2 text-gray-500;
+      span {
+        @apply cursor-pointer hover:text-gray-800
+      }
+      .icon {
+        @apply cursor-pointer hover:text-gray-800 transition-all
+      }
+      .rotate {
+        @apply rotate-180
+      }
+    }
+  }
+}

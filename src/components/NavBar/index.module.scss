@@ -1,0 +1,38 @@
+.inputBox {
+  @apply relative mx-2 h-8 w-36;
+  >div {
+    @apply absolute pl-2 py-1 h-8 leading-6 text-xs w-[9.3rem] flex items-center justify-between
+  }
+  .input {
+    @apply rounded-xl bg-gray-300 opacity-50 outline-none pl-2 pr-4 py-1 h-8 w-36 text-xs top-0 left-0 absolute text-black
+  }
+  .searchBg {
+    .searchIcon {
+      @apply mx-2 text-gray-400 text-sm hover:text-indigo-600 hover:scale-110 cursor-pointer
+    }
+    .show {
+      @apply opacity-100
+    }
+    .none {
+      @apply opacity-0
+    }
+  }
+  .input:focus + .searchBg .show {
+    @apply opacity-0
+  }
+  .input:focus + .searchBg .none {
+    @apply opacity-100
+  }
+}
+
+.icon {
+  @apply mx-2 text-gray-400 text-sm hover:text-indigo-600 hover:scale-110 cursor-pointer transition-all
+}
+
+.iconMd {
+  @apply text-lg
+}
+
+.iconBg {
+  @apply text-xl
+}
