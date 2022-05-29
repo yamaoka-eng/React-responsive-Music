@@ -57,10 +57,10 @@ const LeftNav = () => {
   },[choose])
 
   return (
-    <div className={styles.main + ' bg-gray-100 h-full px-6 flex flex-col'}>
-      <div className='flex items-center pt-4 pb-3 px-2'>
-        <div className='w-8 h-6 pr-1'><PrestrainLocalImg imgUrl='musicLogo.png' /></div>
-        <span className='font-mono font-semibold text-xl w-24'>PPMusic</span>
+    <div className={styles.main + ' bg-gray-100 h-full px-6 flex-col md:flex hidden'}>
+      <div className='flex items-center pt-4 pb-3 px-2 overflow-visible'>
+        <div className='w-8 h-6 pr-1 flex-shrink-0'><PrestrainLocalImg imgUrl='musicLogo.png' /></div>
+        <span className='font-mono font-semibold text-xl flex-shrink-0 overflow-visible'>PPMusic</span>
       </div>
       <div className={styles.navContainer + ' flex flex-col w-full'}>
         <span>在线音乐</span>

@@ -11,7 +11,7 @@ import styles from './index.module.scss'
 export const LongCard = ({ color }) => {
   return (
     <div className={styles.cardContainer}>
-      <div className={styles.cardLong}>
+      <div className={styles.cardLong + ' ' + styles.responsive}>
         <div className={`${styles.topBg} bg-${color}-200 opacity-25`}></div>
         <div className={styles.TopTitle}>For<br />You</div>
         <div className='w-full h-full flex justify-center items-center px-7 overflow-x-hidden'>
@@ -39,7 +39,7 @@ export const LongCard = ({ color }) => {
 export const Card = ({ title, color, description, persons }) => {
   return (
     <div className={styles.cardContainer}>
-      <div className={styles.card}>
+      <div className={styles.card + ' ' + styles.responsive}>
         <div className={styles.shade}></div>
         <AiFillPlayCircle className={styles.logo}/>
         <div className={`${styles[color]} ${styles.topBg}`}></div>

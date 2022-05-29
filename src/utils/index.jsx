@@ -34,7 +34,7 @@ export const lazyLoadComponent = component => {
   return (
     <Suspense fallback={
       <div className={styles.lazyLoad}>
-        <img src={getImage('loading1.jpg')} className={styles.gifimg} />
+        <img src={getImage('/src/assets/images/loading2.jpg')} className={styles.gifimg} />
       </div>
     }>
       <LazyComponent />

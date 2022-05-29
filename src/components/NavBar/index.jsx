@@ -20,8 +20,8 @@ const NavBar = () => {
   }
 
   return (
-    <div className='bg-white w-full px-5 py-3 flex justify-between items-center drop-shadow-lg'>
-      <div className='flex items-center'>
+    <div className='bg-white w-full px-1 md:px-5 py-3 flex justify-between items-center drop-shadow-lg'>
+      <div className='flex items-center flex-shrink-0'>
         <AiOutlineLeft className={`${styles.icon}`}/>
         <AiOutlineRight className={`${styles.icon}`}/>
         <div className={styles.inputBox}>
@@ -36,7 +36,7 @@ const NavBar = () => {
         </div>
         <RiNeteaseCloudMusicLine className={`${styles.icon} ${styles.iconBg}`}/>
       </div>
-      <div className='flex items-center'>
+      <div className='flex items-center flex-shrink-0'>
         <div className='w-6 h-6  rounded-full cursor-pointer'>
           <PrestrainLocalImg imgUrl='骑士.png'/>
         </div>
@@ -46,7 +46,7 @@ const NavBar = () => {
         <BsChevronDown className={`${styles.icon} ${styles.iconMd}`}/>
         <RiTShirtLine className={`${styles.icon} ${styles.iconMd}`}/>
         <BsList className={`${styles.icon} ${styles.iconMd}`}/>
-        <span className='text-lg text-gray-400 mx-2 select-none'>|</span>
+        <span className='text-lg text-gray-400 mx-2 select-none hidden md:block'>|</span>
         <BsTextareaResize className={`${styles.icon} ${styles.iconMd}`}/>
       </div>
     </div>

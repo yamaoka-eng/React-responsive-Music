@@ -14,7 +14,7 @@ function App() {
           <LeftNav/>
           <div className='h-full w-full flex flex-col'>
             <NavBar/>
-              <MainContainer/>
+            <MainContainer/>
           </div>
         </div>
       </div>

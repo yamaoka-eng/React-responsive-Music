@@ -1,10 +1,13 @@
 .cardContainer {
   @apply mr-3 flex-shrink-0 transition-all duration-300 overflow-visible last:mr-0 last:border-r-[1rem] last:border-white;
   .card {
-    @apply relative w-[11rem] h-[11rem] bg-slate-500 rounded-lg overflow-hidden flex-none transition-all duration-300
+    @apply relative aspect-square bg-slate-500 rounded-lg overflow-hidden flex-none transition-all duration-300
   }
   .cardLong {
-    @apply relative w-[22rem] h-[11rem] bg-slate-500 rounded-lg overflow-hidden transition-all duration-300
+    @apply relative aspect-[19/9] bg-slate-500 rounded-lg overflow-hidden transition-all duration-300
+  }
+  .responsive {
+    @apply h-[8rem] sm:h-[9rem] lg:h-[10rem] xl:h-[11rem]
   }
   .shade {
     @apply absolute left-0 top-0 bg-gray-800 opacity-0 w-full h-full z-10 transition-opacity duration-300;
@@ -16,10 +19,10 @@
     @apply absolute w-24 h-24 rounded-full top-0 left-0 -translate-x-1/2 -translate-y-1/2 z-20
   }
   .TopTitle {
-    @apply absolute top-0 left-0 translate-x-2.5 translate-y-1 text-white font-mono font-black text-3xl select-none w-12 overflow-visible z-20
+    @apply absolute top-0 left-0 translate-x-2.5 translate-y-1 text-white font-mono font-black text-2xl sm:text-3xl select-none w-12 overflow-visible z-20
   }
   span {
-    @apply mt-2 text-sm select-none
+    @apply mt-2 text-sm select-none cursor-pointer transition-all duration-300 hover:scale-110 hover:text-indigo-600
   }
   .persons {
     @apply absolute bg-gray-900 bg-opacity-25 flex items-center px-2 py-1 right-4 bottom-4 rounded-2xl text-xs text-white transition-all duration-300 select-none

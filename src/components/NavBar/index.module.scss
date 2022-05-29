@@ -30,9 +30,9 @@
 }
 
 .iconMd {
-  @apply text-lg
+  @apply text-lg hidden md:block
 }
 
 .iconBg {
-  @apply text-xl
+  @apply text-xl hidden md:block
 }

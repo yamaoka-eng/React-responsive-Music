@@ -48,8 +48,10 @@ const RecommendCards = ({ name }) => {
 }
 
 const Recommend = () => {
+
   return(
-    <div className='w-full flex flex-col'>
+    <div className='slide-in'>
+      <div className='w-full flex flex-col'>
       <h1 className=' font-semibold text-2xl my-2 select-none pl-7'>推荐</h1>
       <RecommendCards name='GGBoy' />
       <SongListCards title='你的歌单补给站' data={supplyData}/>
@@ -59,6 +61,7 @@ const Recommend = () => {
       <SongListCards title='最热门的电台节目，一键获得' data={shortData}/>
       <SongList title='用音乐打发美好时光吧'/>
       <SongListCards title='私荐给你的宝藏歌手' data={shortData}/>
+      </div>
     </div>
   )
 }
