@@ -1,4 +1,6 @@
-import { useEffect } from "react"
+import { useEffect, useRef } from "react"
+
+import { PrestrainOutImg } from "../../utils"
 
 import styles from './index.module.scss'
 

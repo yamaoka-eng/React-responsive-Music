@@ -20,7 +20,7 @@ const NavBar = () => {
   }
 
   return (
-    <div className='bg-white w-full px-1 md:px-5 py-3 flex justify-between items-center drop-shadow-lg'>
+    <div className={`bg-white w-full px-1 md:px-5 py-3 flex justify-between items-center drop-shadow-lg ${styles.gradient}`}>
       <div className='flex items-center flex-shrink-0'>
         <AiOutlineLeft className={`${styles.icon}`}/>
         <AiOutlineRight className={`${styles.icon}`}/>

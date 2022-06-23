@@ -17,11 +17,14 @@
       @apply opacity-0
     }
   }
+  .input:focus{
+    
+  }
   .input:focus + .searchBg .show {
     @apply opacity-0
   }
   .input:focus + .searchBg .none {
-    @apply opacity-100
+    @apply opacity-100 z-10
   }
 }
 
@@ -35,4 +38,14 @@
 
 .iconBg {
   @apply text-xl hidden md:block
+}
+
+.gradient {
+  background: 
+    linear-gradient(45deg,
+    rgba(255,255,255,1) 64%,
+    rgba(161, 60, 186, 0.15) 67%,
+    rgba(159, 52, 30, 0.05) 70%,
+    rgba(36, 156, 207, 0.3) 73%,
+    rgba(255,255,255,1) 74%),
 }
